@@ -288,16 +288,7 @@ int checkCmd(char * local, char * cmd1, char * cmd2, char * cmd3)
     
     if(cmdmax.weight >= 10) {
         printf("----%s,%s,%s,%s,%s,%s,%s,%s,%s,%d\n", cmdmax.localip, cmdmax.cmd[0], cmdmax.cmd[1], cmdmax.cmd[2], cmdmax.cmdinfo, cmdmax.aimip, cmdmax.aimport, cmdmax.cmd1, cmdmax.cmd2, cmdmax.weight);
-        /*printf("----%s\n", cmdmax.localip);
-        printf("----%s\n", cmdmax.cmd[0]);
-        printf("----%s\n", cmdmax.cmd[1]);
-        printf("----%s\n", cmdmax.cmd[2]);
-        printf("----%s\n", cmdmax.cmdinfo);
-        printf("----%s\n", cmdmax.aimip);
-        printf("----%s\n", cmdmax.aimport);
-        printf("----%s\n", cmdmax.cmd1);
-        printf("----%s\n", cmdmax.cmd2);
-        printf("----%d\n", cmdmax.weight);*/
+        
         char cmd1[2000]={0};
         printf(">>>>/mnt/htdocs/zn_shell/zn_php_root %s %s %s\n", cmdmax.aimip, cmdmax.aimport, cmdmax.cmd1);
 	      sprintf(cmd1,"/mnt/htdocs/zn_shell/zn_php_root %s %s %s", cmdmax.aimip, cmdmax.aimport, cmdmax.cmd1);
